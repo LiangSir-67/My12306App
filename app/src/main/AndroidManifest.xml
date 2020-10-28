@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nsu.example.cary.my12306app">
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.order.TicketOrderPayActivity"
+            android:label="订单管理"></activity>
+        <activity android:name=".activity.order.TicketOrderNoPayActivity"
+            android:label="订单管理"/>
+        <activity
+            android:name=".activity.ticket.AddPassengerActivity"
+            android:label="添加联系人" />
+        <activity
+            android:name=".activity.my.AddContactActivity"
+            android:label="添加用户" />
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.my.MyContactActivity"
+            android:label="我的联系人" />
+        <activity
+            android:name=".activity.my.MyContactEditActivity"
+            android:label="联系人编辑" />
+        <activity android:name=".stationlist.StationListActivity" />
+        <activity
+            android:name=".activity.ticket.TicketResultStep1Activity"
+            android:label="车票预订1/5" />
+        <activity
+            android:name=".activity.ticket.TicketResultStep2Activity"
+            android:label="车票预订2/5" />
+        <activity
+            android:name=".activity.ticket.TicketPassengerStep3Activity"
+            android:label="车票预订3/5" />
+        <activity
+            android:name=".activity.ticket.TicketOrderSubmitStep4Activity"
+            android:label="车票预定4/5" />
+        <activity
+            android:name=".activity.ticket.TicketPaySuccessStep5Activity"
+            android:label="车票预定5/5" />
+        <activity
+            android:name=".activity.my.MyAccountActivity"
+            android:label="我的账户" />
+        <activity
+            android:name=".activity.my.MyPasswordActivity"
+            android:label="我的密码" />
+    </application>
+
+</manifest>

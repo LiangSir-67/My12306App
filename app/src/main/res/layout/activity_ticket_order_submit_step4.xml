@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ticket.TicketOrderSubmitStep4Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单提交成功，您的订单编号为"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <TextView
+                android:id="@+id/tvTicketOrderticketId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="dsfsd"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您现在可以支付，或暂不支付，待返回后在订单中支付！"
+            android:textColor="@color/orange"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvTicketOrderlist"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/linearLayout3"
+        android:background="#F0FFFF"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none"></ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvTicketOrderStep4Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/shape"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="暂不支付"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tvTicketOrderStep4Pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="确认支付"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

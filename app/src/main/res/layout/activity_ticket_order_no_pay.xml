@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.order.TicketOrderNoPayActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单提交成功，您的订单编号为"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/tvOrderNoPayId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20143Yt"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOrderNoPayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#F0FFFF"
+        android:scrollbars="none"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"></ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvOrderNoPayCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="取消订单"
+            android:textColor="@color/white"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvOrderNoPaySubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="确认支付"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

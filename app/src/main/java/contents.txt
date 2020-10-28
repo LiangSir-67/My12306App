@@ -1,0 +1,16 @@
+卷 LiangSir 的文件夹 PATH 列表
+卷序列号为 606E-208A
+D:.
+└─nsu
+    └─example
+        └─cary
+            └─my12306app
+                ├─activity		包含所有的Activity
+                │  ├─my		我的部分的Activity
+                │  ├─order	订单部分的Activity
+                │  └─ticket	车票部分的Activity
+                ├─adapter	主要包括自定义的BaseAdapter
+                ├─bean		包括所有的实体类
+                ├─fragment	主页面及订单部分的Fragment
+                ├─stationlist	车站选择
+                └─utils		自定义及第三方工具类

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape">
+
+    <TextView
+        android:id="@+id/NoPayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="冬不拉"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/NoPayTrainNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D5"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/NoPayDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-9-10"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/NoPaySeatNO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="6车51号"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:descendantFocusability="blocksDescendants">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        >
+
+        <TextView
+            android:id="@+id/tvTicketDetailsStep2SeatName"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="高级软座"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvTicketDetailsStep2SeatNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="200张" />
+
+        <TextView
+            android:id="@+id/tvTicketDetailsStep2SeatPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="￥120.5"
+            android:textColor="@color/orange" />
+
+        <Button
+            android:id="@+id/btnTicketDetailsStep2Order"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@color/blue1"
+            android:text="预定"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
